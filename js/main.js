@@ -1,0 +1,4 @@
+
+
+/*** cnvyr.min.js ***/
+$(document).ready(function(){$(".carousel").carousel({interval:6000});var c=$(".scroll-top");$(window).scroll(function(){if($(this).scrollTop()>=700){c.show()}else{c.hide()}});c.click(function(){$("html, body").animate({scrollTop:0},600);return false});var b=new google.maps.LatLng(19.4107387,-99.17265029999999);function a(){var e={center:b,zoom:16,mapTypeId:google.maps.MapTypeId.ROADMAP};var g=new google.maps.Map(document.getElementById("google-map"),e);var d=new google.maps.Marker({position:new google.maps.LatLng(19.4063765,-99.17252539999998)});var f=new google.maps.Marker({position:b});d.setMap(g);f.setMap(g)}google.maps.event.addDomListener(window,"load",a)});
